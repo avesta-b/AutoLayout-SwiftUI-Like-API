@@ -27,6 +27,28 @@ class ViewController: UIViewController {
     func config() {
         [label].forEach { view.addSubview($0) }
     }
+    
+    func v1() {
+        let safeArea = view.safeAreaLayoutGuide
+        
+        NSLayoutConstraint.activate([
+            label.centerYAnchor.constraint(equalTo: safeArea.centerYAnchor),
+            label.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 16.0),
+            label.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -16.0),
+            label.heightAnchor.constraint(equalToConstant: 200)
+        ])
+    }
+    
+    func v2() {
+        let safeArea = view.safeAreaLayoutGuide
+        
+        label
+            .verticallyCenter(in: safeArea)
+            .padLeading(in: safeArea, with: 16.0)
+            .padTrailing(in: safeArea, with: 16.0)
+            .makeHeight(equalTo: 200)
+    }
+
 
 }
 
