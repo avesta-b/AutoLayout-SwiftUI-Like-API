@@ -119,7 +119,7 @@ extension UIView {
     }
     
     // MARK: - Match Constraints
-    func match(constraint: ConstraintType, to view: UIView) -> UIView {
+    func match(constraint: ConstraintType, to view: Anchorable) -> UIView {
         enableAutoLayout(for: [view, self])
         switch constraint {
         case .leading:
