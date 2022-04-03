@@ -11,7 +11,9 @@ The v1 function uses the UIKit APIs, the v2 function uses the new SwiftUI like A
 ## Examples
 
 1. Make a align all of the edges of a childView to it's parent with an offset of 16.0
+        ```
         childView.alignToEdges(of: parentView, with: 16.0)
+        ```
 2. 
 
 3. sdsd
