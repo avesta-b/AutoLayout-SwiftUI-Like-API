@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         [label].forEach { view.addSubview($0) }
     }
     
+    // Standard Autolayout
     func v1() {
         let safeArea = view.safeAreaLayoutGuide
         
@@ -39,13 +40,14 @@ class ViewController: UIViewController {
         ])
     }
     
+    // Inspired by: https://github.com/Wattpad/Schematic and SwiftUI's modifier pattern
     func v2() {
         let safeArea = view.safeAreaLayoutGuide
         
         label
             .verticallyCenter(in: safeArea)
-            .padLeading(in: safeArea, with: 16.0)
-            .padTrailing(in: safeArea, with: 16.0)
+            .alignLeading(to: safeArea, withOffset: 16.0)
+            .alignTrailing(to: safeArea, withOffset: -16.0)
             .makeHeight(equalTo: 200)
     }
 

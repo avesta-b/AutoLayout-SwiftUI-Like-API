@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9A4A26227F94A6200E19508 /* ExternalReferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A4A26127F94A6200E19508 /* ExternalReferences.swift */; };
 		C9AE6B3927F901600092FDFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE6B3827F901600092FDFA /* AppDelegate.swift */; };
 		C9AE6B3B27F901600092FDFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE6B3A27F901600092FDFA /* SceneDelegate.swift */; };
 		C9AE6B3D27F901600092FDFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE6B3C27F901600092FDFA /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C9A4A26127F94A6200E19508 /* ExternalReferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalReferences.swift; sourceTree = "<group>"; };
 		C9AE6B3527F901600092FDFA /* AutoLayoutExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9AE6B3827F901600092FDFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9AE6B3A27F901600092FDFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				C9AE6B4D27F9024E0092FDFA /* AutoLayoutViewExtensions.swift */,
+				C9A4A26127F94A6200E19508 /* ExternalReferences.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				C9AE6B3D27F901600092FDFA /* ViewController.swift in Sources */,
 				C9AE6B3927F901600092FDFA /* AppDelegate.swift in Sources */,
 				C9AE6B3B27F901600092FDFA /* SceneDelegate.swift in Sources */,
+				C9A4A26227F94A6200E19508 /* ExternalReferences.swift in Sources */,
 				C9AE6B4E27F9024E0092FDFA /* AutoLayoutViewExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
