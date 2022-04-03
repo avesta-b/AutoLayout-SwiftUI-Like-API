@@ -22,6 +22,7 @@ extension UIView {
 // MARK: - Center Constraints
 extension UIView {
     
+    @discardableResult
     func makeCenter(in view: Anchorable) -> UIView {
         enableAutoLayout(for: [view, self])
         self.translatesAutoresizingMaskIntoConstraints = false
@@ -33,12 +34,14 @@ extension UIView {
         return self
     }
     
+    @discardableResult
     func horizontallyCenter(in view: Anchorable, with offset: CGFloat = 0) -> UIView {
         enableAutoLayout(for: [view, self])
         centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: offset).isActive = true
         return self
     }
     
+    @discardableResult
     func verticallyCenter(in view: Anchorable, with offset: CGFloat = 0) -> UIView {
         enableAutoLayout(for: [view, self])
         centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: offset).isActive = true
@@ -50,6 +53,7 @@ extension UIView {
 // MARK: - Align to parentView
 extension UIView {
     
+    @discardableResult
     func alignToEdges(of view: Anchorable, with padding: CGFloat = 0) -> UIView {
         enableAutoLayout(for: [view, self])
         NSLayoutConstraint.activate([
@@ -66,24 +70,28 @@ extension UIView {
 // MARK: - Padding Constraints (Leading, Trailing, Top, Bottom)
 extension UIView {
     
+    @discardableResult
     func alignLeading(to view: Anchorable, withOffset offset: CGFloat = 0) -> UIView {
         enableAutoLayout(for: [view, self])
         leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: offset).isActive = true
         return self
     }
     
+    @discardableResult
     func alignTrailing(to view: Anchorable, withOffset offset: CGFloat = 0) -> UIView {
         enableAutoLayout(for: [view, self])
         trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: offset).isActive = true
         return self
     }
     
+    @discardableResult
     func alignTop(to view: Anchorable, withOffset offset: CGFloat = 0) -> UIView {
         enableAutoLayout(for: [view, self])
         topAnchor.constraint(equalTo: view.topAnchor, constant: offset).isActive = true
         return self
     }
     
+    @discardableResult
     func alignBottom(to view: Anchorable, withOffset offset: CGFloat = 0) -> UIView {
         enableAutoLayout(for: [view, self])
         bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: offset).isActive = true
@@ -95,18 +103,21 @@ extension UIView {
 // MARK: - Size Constraints
 extension UIView {
     
+    @discardableResult
     func makeWidth(equalTo width: CGFloat) -> UIView {
         enableAutoLayout()
         widthAnchor.constraint(equalToConstant: width).isActive = true
         return self
     }
     
+    @discardableResult
     func makeHeight(equalTo height: CGFloat) -> UIView {
         enableAutoLayout()
         heightAnchor.constraint(equalToConstant: height).isActive = true
         return self
     }
     
+    @discardableResult
     func makeSize(equalTo size: CGSize) -> UIView {
         enableAutoLayout()
         widthAnchor.constraint(equalToConstant: size.width).isActive = true
@@ -119,6 +130,7 @@ extension UIView {
 // MARK: - Match Constraints
 extension UIView {
     
+    @discardableResult
     func match(constraint: ConstraintType, to view: Anchorable) -> UIView {
         enableAutoLayout(for: [view, self])
         switch constraint {
