@@ -7,17 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C9A4A26227F94A6200E19508 /* ExternalReferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A4A26127F94A6200E19508 /* ExternalReferences.swift */; };
+		C9A4A26D27F95A6400E19508 /* AutoLayoutUI in Frameworks */ = {isa = PBXBuildFile; productRef = C9A4A26C27F95A6400E19508 /* AutoLayoutUI */; };
 		C9AE6B3927F901600092FDFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE6B3827F901600092FDFA /* AppDelegate.swift */; };
 		C9AE6B3B27F901600092FDFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE6B3A27F901600092FDFA /* SceneDelegate.swift */; };
 		C9AE6B3D27F901600092FDFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE6B3C27F901600092FDFA /* ViewController.swift */; };
 		C9AE6B4227F901600092FDFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9AE6B4127F901600092FDFA /* Assets.xcassets */; };
 		C9AE6B4527F901600092FDFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9AE6B4327F901600092FDFA /* LaunchScreen.storyboard */; };
-		C9AE6B4E27F9024E0092FDFA /* AutoLayoutViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AE6B4D27F9024E0092FDFA /* AutoLayoutViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C9A4A26127F94A6200E19508 /* ExternalReferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalReferences.swift; sourceTree = "<group>"; };
+		C9A4A26B27F95A5E00E19508 /* AutoLayoutUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AutoLayoutUI; path = ../AutoLayoutUI; sourceTree = "<group>"; };
 		C9AE6B3527F901600092FDFA /* AutoLayoutExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9AE6B3827F901600092FDFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9AE6B3A27F901600092FDFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +24,6 @@
 		C9AE6B4127F901600092FDFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9AE6B4427F901600092FDFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9AE6B4627F901600092FDFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9AE6B4D27F9024E0092FDFA /* AutoLayoutViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +31,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A4A26D27F95A6400E19508 /* AutoLayoutUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9A4A26627F958D100E19508 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4A26B27F95A5E00E19508 /* AutoLayoutUI */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		C9A4A26827F958E300E19508 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C9AE6B2C27F901600092FDFA = {
 			isa = PBXGroup;
 			children = (
+				C9A4A26627F958D100E19508 /* Packages */,
 				C9AE6B3727F901600092FDFA /* AutoLayoutExtensions */,
 				C9AE6B3627F901600092FDFA /* Products */,
+				C9A4A26827F958E300E19508 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +88,6 @@
 		C9AE6B4C27F901AB0092FDFA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				C9AE6B4D27F9024E0092FDFA /* AutoLayoutViewExtensions.swift */,
-				C9A4A26127F94A6200E19508 /* ExternalReferences.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -94,6 +108,9 @@
 			dependencies = (
 			);
 			name = AutoLayoutExtensions;
+			packageProductDependencies = (
+				C9A4A26C27F95A6400E19508 /* AutoLayoutUI */,
+			);
 			productName = AutoLayoutExtensions;
 			productReference = C9AE6B3527F901600092FDFA /* AutoLayoutExtensions.app */;
 			productType = "com.apple.product-type.application";
@@ -151,8 +168,6 @@
 				C9AE6B3D27F901600092FDFA /* ViewController.swift in Sources */,
 				C9AE6B3927F901600092FDFA /* AppDelegate.swift in Sources */,
 				C9AE6B3B27F901600092FDFA /* SceneDelegate.swift in Sources */,
-				C9A4A26227F94A6200E19508 /* ExternalReferences.swift in Sources */,
-				C9AE6B4E27F9024E0092FDFA /* AutoLayoutViewExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +377,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9A4A26C27F95A6400E19508 /* AutoLayoutUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AutoLayoutUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C9AE6B2D27F901600092FDFA /* Project object */;
 }

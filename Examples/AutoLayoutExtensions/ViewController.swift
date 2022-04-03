@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AutoLayoutUI
 
 class ViewController: UIViewController {
     
@@ -21,7 +22,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.title = "Hello"
         config()
-        
+        v2()
     }
     
     func config() {
@@ -49,6 +50,8 @@ class ViewController: UIViewController {
             .alignLeading(to: safeArea, withOffset: 16.0)
             .alignTrailing(to: safeArea, withOffset: -16.0)
             .makeHeight(equalTo: 200)
+        
+        
     }
 
 

@@ -7,8 +7,10 @@
 
 import UIKit
 
-// Protocol that bridges UILayoutGuide and UIView
+
 // Taken From: https://github.com/Wattpad/Schematic/blob/master/Schematic/Classes/Protocols/Anchorable.swift
+
+/// Protocol that bridges UILayoutGuide and UIView
 public protocol Anchorable {
     var leadingAnchor: NSLayoutXAxisAnchor { get }
     var trailingAnchor: NSLayoutXAxisAnchor { get }

@@ -8,7 +8,7 @@
 import UIKit
 
 // MARK: - Enum ConstraintType
-extension UIView {
+public extension UIView {
     enum ConstraintType {
         case leading
         case trailing
@@ -20,8 +20,9 @@ extension UIView {
 }
 
 // MARK: - Center Constraints
-extension UIView {
+public extension UIView {
     
+    /// Centers the view this function is called on in the view passed
     @discardableResult
     func makeCenter(in view: Anchorable) -> UIView {
         enableAutoLayout(for: [view, self])
@@ -34,15 +35,17 @@ extension UIView {
         return self
     }
     
+    /// Horizontally the view this function is called on in the view passed with the offset provided
     @discardableResult
-    func horizontallyCenter(in view: Anchorable, with offset: CGFloat = 0) -> UIView {
+    func horizontallyCenter(in view: Anchorable, withOffset offset: CGFloat = 0) -> UIView {
         enableAutoLayout(for: [view, self])
         centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: offset).isActive = true
         return self
     }
     
+    /// Vertically the view this function is called on in the view passed with the offset provided
     @discardableResult
-    func verticallyCenter(in view: Anchorable, with offset: CGFloat = 0) -> UIView {
+    func verticallyCenter(in view: Anchorable, withOffset offset: CGFloat = 0) -> UIView {
         enableAutoLayout(for: [view, self])
         centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: offset).isActive = true
         return self
@@ -51,8 +54,9 @@ extension UIView {
 }
 
 // MARK: - Align to parentView
-extension UIView {
+public extension UIView {
     
+    /// Aligns the view this function is called on to the view passed with padding provided
     @discardableResult
     func alignToEdges(of view: Anchorable, with padding: CGFloat = 0) -> UIView {
         enableAutoLayout(for: [view, self])
@@ -68,8 +72,9 @@ extension UIView {
 }
 
 // MARK: - Padding Constraints (Leading, Trailing, Top, Bottom)
-extension UIView {
+public extension UIView {
     
+    /// Aligns the view this function is called on's leading to the view passed with offset provided
     @discardableResult
     func alignLeading(to view: Anchorable, withOffset offset: CGFloat = 0) -> UIView {
         enableAutoLayout(for: [view, self])
@@ -77,6 +82,7 @@ extension UIView {
         return self
     }
     
+    /// Aligns the view this function is called on's trailing to the view passed with offset provided
     @discardableResult
     func alignTrailing(to view: Anchorable, withOffset offset: CGFloat = 0) -> UIView {
         enableAutoLayout(for: [view, self])
@@ -84,6 +90,7 @@ extension UIView {
         return self
     }
     
+    /// Aligns the view this function is called on's top to the view passed with offset provided
     @discardableResult
     func alignTop(to view: Anchorable, withOffset offset: CGFloat = 0) -> UIView {
         enableAutoLayout(for: [view, self])
@@ -91,6 +98,7 @@ extension UIView {
         return self
     }
     
+    /// Aligns the view this function is called on's bottom to the view passed with offset provided
     @discardableResult
     func alignBottom(to view: Anchorable, withOffset offset: CGFloat = 0) -> UIView {
         enableAutoLayout(for: [view, self])
@@ -101,8 +109,9 @@ extension UIView {
 }
 
 // MARK: - Size Constraints
-extension UIView {
+public extension UIView {
     
+    /// Makes the view this function is called on the specified width
     @discardableResult
     func makeWidth(equalTo width: CGFloat) -> UIView {
         enableAutoLayout()
@@ -110,6 +119,7 @@ extension UIView {
         return self
     }
     
+    /// Makes the view this function is called on the specified height
     @discardableResult
     func makeHeight(equalTo height: CGFloat) -> UIView {
         enableAutoLayout()
@@ -117,6 +127,7 @@ extension UIView {
         return self
     }
     
+    /// Makes the view this function is called on the specified size
     @discardableResult
     func makeSize(equalTo size: CGSize) -> UIView {
         enableAutoLayout()
@@ -128,8 +139,9 @@ extension UIView {
 }
     
 // MARK: - Match Constraints
-extension UIView {
+public extension UIView {
     
+    /// Makes the view this function's called match the constraint for another view for the specified constraint type
     @discardableResult
     func match(constraint: ConstraintType, to view: Anchorable) -> UIView {
         enableAutoLayout(for: [view, self])
