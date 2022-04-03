@@ -1,5 +1,11 @@
 # AutoLayout-SwiftUI-Like-API
 
+## Lots of credit to Schematic by Wattpad
+
+Inspiration for some function names and the Anchorable protocol came from that project.
+
+Link: https://github.com/Wattpad/Schematic
+
 ## Code for the extension
 Can be found at: https://github.com/avesta-b/AutoLayout-SwiftUI-Like-API/blob/main/AutoLayoutExtensions/Extensions/AutoLayoutViewExtensions.swift
 
